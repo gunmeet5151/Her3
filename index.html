@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Her 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    #message {
+      margin-top: 30px;
+      font-size: 1.5rem;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #ffffff;
+      color: #a64ac9;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a64ac9;
+      color: #ffffff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <h1>🌸 A Little Sunshine for Her 🌸</h1>
+  <button onclick="showMessage()">Click Me</button>
+  <div id="message"></div>
+
+  <script>
+    function showMessage() {
+      const messages = [
+        "You are stronger than you know and more loved than you realize.",
+        "Your smile lights up the world—never let it fade.",
+        "Every day you become more beautiful, more brave, and more brilliant.",
+        "You are a masterpiece in progress, glowing with purpose.",
+        "No storm lasts forever—your sunshine is on its way 🌞"
+      ];
+
+      const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+      document.getElementById("message").innerText = randomMessage;
+    }
+  </script>
+</body>
+</html>
